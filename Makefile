@@ -1,11 +1,11 @@
-lint:
+install:
+	@yarn install
+
+lint: install
 	yarn lint
 
 test: lint
 	yarn test
 
-install:
-	yarn install
-
-example:
+example: install
 	node example.js
