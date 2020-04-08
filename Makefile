@@ -8,4 +8,4 @@ test: lint
 	yarn test
 
 example: install
-	node example.js
+	node examples/example.js

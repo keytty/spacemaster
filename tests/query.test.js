@@ -1,4 +1,3 @@
-const assert = require('assert')
 const _ = require('lodash')
 
 const testdatas = [
@@ -58,13 +57,12 @@ const testdatas = [
   }
 ]
 
-const { query } = require('./index.js')
+const { query } = require('../src/query.js')
 
-_.each(testdatas, testdata => {
-  const { computed } = query(testdata.input)
+_.each(testdatas, ({ message, input, output }) => {
+  test(message, () => {
+    const { computed } = query(input)
 
-  assert(
-    _.isEqual(computed, testdata.output.computed),
-    testdata.message
-  )
+    expect(computed).toEqual(output.computed)
+  })
 })

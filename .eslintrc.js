@@ -6,6 +6,7 @@ module.exports = {
   },
   extends: [
     'prettier',
+    'plugin:jest/recommended',
     'standard'
   ],
   globals: {

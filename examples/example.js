@@ -1,8 +1,8 @@
 // import
-const spacemaster = require('./query.js')
+const spacemaster = require('../index.js')
 
 // or like this
-const { query } = require('./query.js')
+const { query } = require('../index.js')
 
 const example1 = {
   resolution: {

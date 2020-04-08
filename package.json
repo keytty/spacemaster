@@ -10,7 +10,7 @@
     "lint2": "eslint '**/*.js' --ignore-pattern '!./.eslintrc.js'",
     "lint1": "eslint '**/*.js'",
     "lint": "eslint .",
-    "test": "node test.js"
+    "test": "jest"
   },
   "dependencies": {
     "lodash": "^4.17.15"
@@ -20,8 +20,10 @@
     "eslint-config-prettier": "^6.10.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jest": "^23.8.2",
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1"
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^25.3.0"
   }
 }

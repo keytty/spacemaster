@@ -1,1 +1,1 @@
-module.exports = require('./query.js')
+module.exports = require('./src/query.js')
