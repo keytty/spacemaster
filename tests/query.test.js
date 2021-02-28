@@ -60,6 +60,7 @@ const testdatas = [
 const { query } = require('../src/query.js')
 
 _.each(testdatas, ({ message, input, output }) => {
+  // eslint-disable-next-line jest/valid-title
   test(message, () => {
     const { computed } = query(input)
 
